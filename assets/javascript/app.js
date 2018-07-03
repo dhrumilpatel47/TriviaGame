@@ -98,7 +98,6 @@ function showCountdown(){
 	$('#timeLeft').html('<h3>Time Remaining: ' + seconds + '</h3>');
 	if(seconds < 1){
 		clearInterval(time);
-		answered = false;
 		answerPage();
 	}
 }
@@ -128,11 +127,11 @@ function answerPage(){
 		answered = true;
 	}	
 	if(currentQuestion == (triviaQuestions.length-1)){
-		setTimeout(scoreboard, 5000)
+		setTimeout(scoreboard, 1000)
 	} 
 	else{
 		currentQuestion++;
-		setTimeout(newQuestion, 5000);
+		setTimeout(newQuestion, 1000);
 	}	
 }
 
