@@ -1,68 +1,31 @@
-html, body{
-  height:100%;
-}
 
-body{
-  background-image: url(../images/bg.jpg);
-  text-align: center;
+  body{
+    background-color: gold;
+    text-align: center;
+  }
+  
+  #container{
+    margin:2.5% auto;
+    width:960px;
+    height: 95%; 
+  }
+  
 
-}
-
-#container{
-  margin:2.5% auto;
-  width:960px;
-  height: 95%;
-  box-sizing: border-box;
-}
-
-#subcontainer{
-  position: relative;
-}
-button{
-  display:block;
-  width:50%;
-  height:20%;
-  margin: 0 auto;
-  border:none;
-  cursor: pointer;
-  background:transparent;
-  font-family: 'Times New Roman', Times, serif;
-  font-size: 30px;
-  color: white
-}
-
-img{
-  height:200px;
-}
-
-
-h2{
-  font-size: 35px;
-  margin-bottom: 25px;
-  color: white
-}
-
-h3{
-  font-size: 25px;
-  margin-bottom: 10px;
-  color: white
-}
-
-#start{
-  margin-top: 10%;
-  border:2px solid white;
-  background: rgb(87, 4, 87);
-}
-
-button:hover {
-  border:2px solid white;
-  background: rgb(87, 4, 87);
-}
-
-@media screen and (max-width:640px){
-    .container{
-        width: 500px;
-        margin-top: 200px;
-        size: 200%;
-  }	
-}
+  button{
+    width:50%;
+    height:20%;
+    margin: 0 auto;
+  }
+  
+ 
+  #start{
+    margin-top: 30%;  
+  }
+  
+  @media screen and (max-width:640px){
+      .container{
+          width: 500px;
+          margin-top: 200px;
+          size: 200%;
+    }	
+  }
