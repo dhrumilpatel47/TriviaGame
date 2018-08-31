@@ -34,7 +34,7 @@ var answers = ["Seventeen",
 
     function nextQuestion(){
       $("#results").empty();
-      timer = 3;
+      timer = 10;
       $('#timer').text(timer);
       timerId = setInterval(next, 1000);
       $('#question').text(questions[currentQIndex]);
