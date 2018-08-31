@@ -30,20 +30,7 @@ var answers = ["Seventeen",
     "Chuck Nevitt",
     "Three",
     "Five"
-  ];
-
-    function nextQuestion(){
-      $("#results").empty();
-      timer = 10;
-      $('#timer').text(timer);
-      timerId = setInterval(next, 1000);
-      $('#question').text(questions[currentQIndex]);
-      $.each(ans_choices[currentQIndex], function(i, item){
-       $("#ans_choices").append($('<button class="btn btn-outline-dark option">'+item+'</button>'+'<br><br>'));
-      })
-  
-     
-   };
+  ]; 
   
   function startGame() {
       clearInterval(timerId);
@@ -103,4 +90,15 @@ var answers = ["Seventeen",
       }
     };
   
+  function nextQuestion(){
+      $("#results").empty();
+      timer = 10;
+      $('#timer').text(timer);
+      timerId = setInterval(next, 1000);
+      $('#question').text(questions[currentQIndex]);
+      $.each(ans_choices[currentQIndex], function(i, item){
+       $("#ans_choices").append($('<button class="btn btn-outline-dark option">'+item+'</button>'+'<br><br>'));
+      })
   
+     
+   };
